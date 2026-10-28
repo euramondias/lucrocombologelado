@@ -53,8 +53,8 @@
   --color-chart-5: var(--chart-5);
   --font-display: "Fraunces", Georgia, serif;
   --font-sans: "Manrope", system-ui, sans-serif;
-  --shadow-soft: var(--shadow-soft);
-  --shadow-gold: var(--shadow-gold);
+  --shadow-soft: var(--shadow-soft-v);
+  --shadow-gold: var(--shadow-gold-v);
   --color-sidebar: var(--sidebar);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar-primary: var(--sidebar-primary);
@@ -99,8 +99,8 @@
   --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
-  --shadow-soft: 0 12px 40px -16px oklch(0.27 0.05 40 / 0.25);
-  --shadow-gold: 0 10px 30px -10px oklch(0.75 0.13 78 / 0.6);
+  --shadow-soft-v: 0 12px 40px -16px oklch(0.27 0.05 40 / 0.25);
+  --shadow-gold-v: 0 10px 30px -10px oklch(0.75 0.13 78 / 0.6);
 }
 
 @layer base {
