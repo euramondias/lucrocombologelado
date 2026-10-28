@@ -133,8 +133,7 @@ function Index() {
         {/* HERO */}
         <section className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 md:grid-cols-2 md:py-20">
           <div>
-            <span className="inline-block rounded-full bg-muted px-4 py-1.5 text-xs font-bold tracking-widest text-secondary">CURSO ONLINE DE BOLO GELADO</span>
-            <h1 className="mt-5 text-4xl font-bold leading-[1.1] text-primary sm:text-5xl">
+            <h1 className="text-4xl font-bold leading-[1.1] text-primary sm:text-5xl">
               Aprenda a fazer <span className="text-accent italic">bolos gelados</span> irresistíveis e descubra como começar a <span className="underline decoration-accent decoration-4 underline-offset-8">vender</span>!
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
