@@ -8,3 +8,4 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+- Sales-page editable settings (checkout URL, price, contact, legal links, guarantee flag, testimonials) live in src/config/site.ts — single place to change them.
