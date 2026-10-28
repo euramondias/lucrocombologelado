@@ -129,15 +129,6 @@ function Logo({ light = false }: { light?: boolean }) {
 function Index() {
   return (
     <div className="overflow-x-hidden">
-      <header className="sticky top-0 z-30 border-b border-border/60 bg-background/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
-          <a href="#topo" aria-label="Lucro com Bolo Gelado — início"><Logo /></a>
-          <a href="#oferta" className="hidden rounded-full bg-primary px-5 py-2 text-sm font-bold text-primary-foreground transition hover:bg-secondary sm:inline-flex">
-            Quero aprender
-          </a>
-        </div>
-      </header>
-
       <main id="topo">
         {/* HERO */}
         <section className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 md:grid-cols-2 md:py-20">
@@ -195,7 +186,6 @@ function Index() {
                 </li>
               ))}
             </ul>
-            <div className="mt-12 text-center"><BuyButton href="#oferta">QUERO APRENDER AGORA</BuyButton></div>
           </div>
         </section>
 
@@ -313,21 +303,7 @@ function Index() {
       </main>
 
       <footer className="bg-primary py-12 text-primary-foreground">
-        <div className="mx-auto max-w-6xl space-y-6 px-5 text-center">
-          <Logo light />
-          <nav className="flex flex-wrap justify-center gap-6 text-sm">
-            <a href={LEGAL_LINKS.privacy} className="hover:text-accent">Política de Privacidade</a>
-            <a href={LEGAL_LINKS.terms} className="hover:text-accent">Termos de Uso</a>
-            <a href={`mailto:${CONTACT.email}`} className="inline-flex items-center gap-1 hover:text-accent"><Mail className="h-4 w-4" aria-hidden />{CONTACT.email}</a>
-            {CONTACT.whatsapp && (
-              <a href={`https://wa.me/${CONTACT.whatsapp}`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-accent"><MessageCircle className="h-4 w-4" aria-hidden />WhatsApp</a>
-            )}
-          </nav>
-          <p className="mx-auto max-w-2xl text-xs text-primary-foreground/70">
-            Os resultados financeiros dependem de diversos fatores, como dedicação, região, custos e demanda, e não são garantidos.
-          </p>
-          <p className="text-xs text-primary-foreground/70">© {new Date().getFullYear()} Lucro com Bolo Gelado. Todos os direitos reservados.</p>
-        </div>
+        <p className="px-5 text-center text-sm text-primary-foreground/80">© {new Date().getFullYear()} Lucro com Bolo Gelado — Todos os direitos reservados.</p>
       </footer>
     </div>
   );
