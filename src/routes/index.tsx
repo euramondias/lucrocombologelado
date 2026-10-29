@@ -22,13 +22,15 @@ import r11 from "@/assets/r11.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Lucro com Bolo Gelado — Curso online de bolos gelados" },
-      { name: "description", content: "Aprenda 11 receitas de bolo gelado em videoaulas e dê os primeiros passos para vender. Acesso por R$ 27,00." },
-      { property: "og:title", content: "Lucro com Bolo Gelado — Curso online" },
-      { property: "og:description", content: "11 receitas de bolo gelado em videoaulas, versões embrulhadas e na marmita. Aprenda no seu ritmo." },
+      { title: "Lucro com Bolo Gelado" },
+      { name: "description", content: "Aprenda 11 receitas de bolo gelado em videoaulas passo a passo, com versões embrulhadas e na marmita. Conheça o preparo, a precificação e dicas para começar a vender." },
+      { property: "og:title", content: "Lucro com Bolo Gelado" },
+      { property: "og:description", content: "Aprenda 11 receitas de bolo gelado em videoaulas passo a passo, com versões embrulhadas e na marmita. Conheça o preparo, a precificação e dicas para começar a vender." },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://lucrocombologelado.lovable.app/" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://lucrocombologelado.lovable.app/" }],
   }),
   component: Index,
 });
