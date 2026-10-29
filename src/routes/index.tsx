@@ -151,10 +151,6 @@ function Index() {
           </div>
           <div className="relative">
             <img src={hero} alt="Fatia de bolo gelado de coco com cobertura de coco ralado, com bolos de chocolate e Prestígio ao fundo" width={1200} height={1408} className="aspect-[6/7] w-full rounded-3xl object-cover shadow-soft" />
-            <div className="absolute -bottom-5 left-5 rounded-2xl bg-card px-5 py-3 shadow-soft">
-              <p className="font-display text-2xl font-bold text-primary">11 receitas</p>
-              <p className="text-sm text-muted-foreground">em videoaulas</p>
-            </div>
           </div>
         </section>
 
@@ -296,7 +292,6 @@ function Index() {
                 </AccordionItem>
               ))}
             </Accordion>
-            <div className="mt-12 text-center"><BuyButton>QUERO ACESSAR O CURSO AGORA</BuyButton></div>
           </div>
         </section>
       </main>
