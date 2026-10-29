@@ -1,7 +1,7 @@
 // Edite aqui as informações configuráveis da página de vendas.
 
-/** Endereço do checkout. Substitua pelo link real da sua plataforma de pagamento. */
-export const CHECKOUT_URL = "https://seu-checkout.com/lucro-com-bolo-gelado";
+/** Endereço do checkout. */
+export const CHECKOUT_URL = "https://pay.kiwify.com.br/AkqU2HZ";
 
 export const PRICE = "27,00";
 
