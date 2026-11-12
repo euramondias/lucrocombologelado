@@ -154,7 +154,7 @@ function Index() {
             <BuyButton href="#oferta" className="mt-8 w-full sm:w-auto">QUERO APRENDER AGORA</BuyButton>
           </div>
           <div className="relative">
-            <img src={hero} alt="Fatia de bolo gelado de coco com cobertura de coco ralado, com bolos de chocolate e Prestígio ao fundo" width={1200} height={1408} className="aspect-[6/7] w-full rounded-3xl object-cover shadow-soft" />
+            <img src={heroAsset.url} alt="Fatia de bolo gelado de coco suspensa em uma espátula, retirada de uma assadeira alumínio coberta com coco ralado" width={1255} height={1673} className="aspect-[6/7] w-full rounded-3xl object-cover shadow-soft" />
           </div>
         </section>
 
