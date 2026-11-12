@@ -6,7 +6,7 @@ import {
 import type { ReactNode } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CHECKOUT_URL, PRICE, CONTACT, LEGAL_LINKS, HAS_7_DAY_GUARANTEE, TESTIMONIALS } from "@/config/site";
-import hero from "@/assets/hero.jpg";
+import heroAsset from "@/assets/hero.jpeg.asset.json";
 import r1 from "@/assets/r1.jpg";
 import r2 from "@/assets/r2.jpg";
 import r3 from "@/assets/r3.jpg";
@@ -28,7 +28,9 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Aprenda 11 receitas de bolo gelado em videoaulas passo a passo, com versões embrulhadas e na marmita. Conheça o preparo, a precificação e dicas para começar a vender." },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://lucrocombologelado.lovable.app/" },
+      { property: "og:image", content: "https://lucrocombologelado.lovable.app/__l5e/assets-v1/9302f37d-f12a-4ec3-9c8f-ade7e51a4d66/hero.jpeg" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://lucrocombologelado.lovable.app/__l5e/assets-v1/9302f37d-f12a-4ec3-9c8f-ade7e51a4d66/hero.jpeg" },
     ],
     links: [{ rel: "canonical", href: "https://lucrocombologelado.lovable.app/" }],
   }),
@@ -152,7 +154,7 @@ function Index() {
             <BuyButton href="#oferta" className="mt-8 w-full sm:w-auto">QUERO APRENDER AGORA</BuyButton>
           </div>
           <div className="relative">
-            <img src={hero} alt="Fatia de bolo gelado de coco com cobertura de coco ralado, com bolos de chocolate e Prestígio ao fundo" width={1200} height={1408} className="aspect-[6/7] w-full rounded-3xl object-cover shadow-soft" />
+            <img src={heroAsset.url} alt="Fatia de bolo gelado de coco suspensa em uma espátula, retirada de uma assadeira de alumínio coberta com coco ralado" width={1255} height={1673} className="aspect-[6/7] w-full rounded-3xl object-cover shadow-soft" />
           </div>
         </section>
 
