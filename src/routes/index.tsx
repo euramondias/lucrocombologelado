@@ -239,7 +239,7 @@ function Index() {
         {/* DEPOIMENTOS */}
         <section className="py-20">
           <div className="mx-auto max-w-6xl px-5">
-            <SectionHead title="Experiências de quem aprende e empreende" sub="Espaço reservado para depoimentos reais de alunas, publicados com autorização." />
+            <SectionHead title="Experiências de quem aprende e empreende" sub="Confira os relatos de quem aprendeu com o curso e colocou as receitas em prática." />
             <div className="grid gap-6 md:grid-cols-3">
               {TESTIMONIALS.map((t, i) => (
                 <figure key={i} className="relative rounded-2xl border border-dashed border-border bg-card p-7 shadow-soft">
