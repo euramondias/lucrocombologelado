@@ -5,3 +5,5 @@
 - [x] Atualizar os três depoimentos com textos, nomes, cidades e fotos enviados.
 - [x] Trocar o link do botão de compra para o novo checkout.
 - [x] Conferir os depoimentos e o botão de compra na página.
+- [x] Refazer o Bloco 6 (oferta) no layout enviado, com preço "de" R$ 97,00 e fundo #FBF3E7.
+- [x] Conferir o Bloco 6 na página em celular e computador.

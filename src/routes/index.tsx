@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   Cake, PlayCircle, Package, ClipboardList, Calculator, Megaphone,
-  Sparkles, Video, TrendingUp, Wallet, Check, ShieldCheck, Star, User, Mail, MessageCircle,
+  Sparkles, Video, TrendingUp, Wallet, Check, ShieldCheck, Star, User, Mail, MessageCircle, ArrowRight,
 } from "lucide-react";
 import type { ReactNode } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CHECKOUT_URL, PRICE, CONTACT, LEGAL_LINKS, HAS_7_DAY_GUARANTEE, TESTIMONIALS } from "@/config/site";
+import { CHECKOUT_URL, PRICE, ORIGINAL_PRICE, CONTACT, LEGAL_LINKS, HAS_7_DAY_GUARANTEE, TESTIMONIALS } from "@/config/site";
 import heroAsset from "@/assets/hero.jpeg.asset.json";
 import r1 from "@/assets/r1.jpg";
 import r2 from "@/assets/r2.jpg";
@@ -121,15 +121,6 @@ function IconCard({ icon: Icon, t, d }: { icon: typeof Cake; t: string; d: strin
   );
 }
 
-function Logo({ light = false }: { light?: boolean }) {
-  // Substitua por <img src={logo} /> quando a logo oficial for adicionada.
-  return (
-    <span className={`font-display text-xl font-bold ${light ? "text-primary-foreground" : "text-primary"}`}>
-      Lucro com <span className="text-accent">Bolo Gelado</span>
-    </span>
-  );
-}
-
 function Index() {
   return (
     <div className="overflow-x-hidden">
@@ -214,26 +205,31 @@ function Index() {
         </section>
 
         {/* OFERTA */}
-        <section id="oferta" className="scroll-mt-16 bg-primary py-20">
+        <section id="oferta" className="scroll-mt-16 bg-offer-bg py-20">
           <div className="mx-auto max-w-6xl px-5">
-            <SectionHead light title="Comece hoje sua jornada no mundo dos bolos gelados!" sub="Tenha acesso às receitas do curso Lucro com Bolo Gelado e aprenda no seu ritmo." />
-            <div className="mx-auto max-w-md rounded-3xl bg-background p-8 text-center shadow-soft sm:p-10">
-              <Logo />
-              <ul className="mt-6 space-y-2 text-left">
-                {INCLUDED.slice(0, 3).map((i) => (
-                  <li key={i} className="flex gap-2 text-sm text-foreground"><Check className="mt-0.5 h-4 w-4 shrink-0 text-accent" aria-hidden />{i}</li>
-                ))}
-              </ul>
-              <div className="my-8 border-y border-border py-6">
-                <p className="text-sm font-semibold text-muted-foreground">Acesso ao curso por</p>
-                <p className="font-display text-primary">
-                  <span className="align-top text-2xl font-bold">R$</span>{" "}
-                  <span className="text-7xl font-bold">{PRICE.split(",")[0]}</span>
-                  <span className="text-3xl font-bold">,{PRICE.split(",")[1]}</span>
+            <SectionHead title="Comece hoje sua jornada no mundo dos bolos gelados!" sub="Tenha acesso às receitas do curso Lucro com Bolo Gelado e aprenda no seu ritmo." />
+            <div className="mx-auto max-w-md overflow-hidden rounded-3xl bg-card shadow-soft">
+              <span className="offer-top-bar block h-2" aria-hidden />
+              <div className="px-6 py-9 text-center sm:px-10">
+                <span className="inline-flex items-center gap-2 rounded-full bg-accent/15 px-4 py-2 text-xs font-extrabold text-primary">
+                  <span aria-hidden>🔥</span> Acesso promocional por tempo limitado
+                </span>
+                <h3 className="mt-6 font-sans text-3xl font-extrabold leading-tight text-primary sm:text-4xl">Garanta seu acesso hoje</h3>
+                <div className="mt-7">
+                  <p className="text-sm font-semibold text-muted-foreground"><span className="line-through">De R$ {ORIGINAL_PRICE}</span></p>
+                  <p className="mt-3 font-display leading-none text-primary">
+                    <span className="align-top text-2xl font-bold">R$</span>{" "}
+                    <span className="text-7xl font-bold">{PRICE.split(",")[0]}</span>
+                    <span className="text-3xl font-bold">,{PRICE.split(",")[1]}</span>
+                  </p>
+                  <p className="mt-1 text-sm text-muted-foreground">Pagamento único • Acesso vitalício</p>
+                </div>
+                <BuyButton className="mt-8 w-full">Quero Começar Agora <ArrowRight className="ml-2 h-5 w-5" aria-hidden /></BuyButton>
+                <p className="mt-5 flex items-center justify-center gap-2 text-xs font-semibold text-muted-foreground">
+                  <ShieldCheck className="h-4 w-4 shrink-0 text-accent" aria-hidden />
+                  Compra 100% segura • Garantia de 7 dias
                 </p>
               </div>
-              <BuyButton className="w-full">QUERO ACESSAR O CURSO AGORA</BuyButton>
-              <p className="mt-4 text-xs text-muted-foreground">O pagamento é processado com segurança pela plataforma de checkout.</p>
             </div>
           </div>
         </section>

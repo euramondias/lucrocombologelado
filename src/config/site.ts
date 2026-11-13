@@ -5,6 +5,9 @@ export const CHECKOUT_URL = "https://pay.kiwify.com.br/jKqrmAz";
 
 export const PRICE = "27,00";
 
+/** Preço "de" exibido riscado na oferta. */
+export const ORIGINAL_PRICE = "97,00";
+
 export const CONTACT = {
   email: "contato@seudominio.com.br",
   whatsapp: "", // ex.: "5511999999999" (deixe vazio para ocultar)
@@ -16,7 +19,7 @@ export const LEGAL_LINKS = {
 };
 
 /** Mude para true apenas se a garantia de 7 dias estiver realmente disponível. */
-export const HAS_7_DAY_GUARANTEE = false;
+export const HAS_7_DAY_GUARANTEE = true;
 
 /** Depoimentos fornecidos pelo responsável pela página. */
 export const TESTIMONIALS = [
