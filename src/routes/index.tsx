@@ -209,15 +209,15 @@ function Index() {
           <div className="mx-auto max-w-6xl px-5">
             <SectionHead title="Comece hoje sua jornada no mundo dos bolos gelados!" sub="Tenha acesso às receitas do curso Lucro com Bolo Gelado e aprenda no seu ritmo." />
             <div className="mx-auto max-w-md overflow-hidden rounded-3xl bg-card shadow-soft">
-              <span className="offer-top-bar block h-1.5" aria-hidden />
+              <span className="offer-top-bar block h-2" aria-hidden />
               <div className="px-6 py-9 text-center sm:px-10">
                 <span className="inline-flex items-center gap-2 rounded-full bg-accent/15 px-4 py-2 text-xs font-extrabold text-primary">
                   <span aria-hidden>🔥</span> Acesso promocional por tempo limitado
                 </span>
                 <h3 className="mt-6 font-sans text-3xl font-extrabold leading-tight text-primary sm:text-4xl">Garanta seu acesso hoje</h3>
-                <div className="mt-6">
+                <div className="mt-7">
                   <p className="text-sm font-semibold text-muted-foreground"><span className="line-through">De R$ {ORIGINAL_PRICE}</span></p>
-                  <p className="font-display text-primary">
+                  <p className="mt-3 font-display leading-none text-primary">
                     <span className="align-top text-2xl font-bold">R$</span>{" "}
                     <span className="text-7xl font-bold">{PRICE.split(",")[0]}</span>
                     <span className="text-3xl font-bold">,{PRICE.split(",")[1]}</span>
