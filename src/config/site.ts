@@ -5,6 +5,9 @@ export const CHECKOUT_URL = "https://pay.kiwify.com.br/jKqrmAz";
 
 export const PRICE = "27,00";
 
+/** Preço "de" exibido riscado na oferta. */
+export const ORIGINAL_PRICE = "97,00";
+
 export const CONTACT = {
   email: "contato@seudominio.com.br",
   whatsapp: "", // ex.: "5511999999999" (deixe vazio para ocultar)
