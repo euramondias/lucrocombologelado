@@ -9,3 +9,5 @@
 - [x] Conferir o Bloco 6 na página em celular e computador.
 - [x] Tirar o título e o subtítulo do Bloco 6 e os rótulos "RECEITA 01…11" dos cards de receita.
 - [x] Conferir as receitas e o Bloco 6 na página.
+- [x] Trocar as 11 fotos das receitas pelas fotos reais enviadas pelo usuário.
+- [ ] Ajustar os trechos que ainda dizem "11 receitas" para 27 (bloco de receitas e "Tudo para começar a aprender") — esperando o usuário confirmar e mandar os nomes.
