@@ -75,16 +75,17 @@ const INCLUDED = [
   "Orientações de organização e planejamento de vendas",
 ];
 
-// Respostas marcadas com [EDITAR] dependem da configuração real do curso.
 const FAQ = [
-  { q: "Preciso ter experiência com confeitaria?", a: "Não. As receitas são demonstradas passo a passo em vídeo, para que você possa acompanhar mesmo começando agora." },
-  { q: "Como funcionam as videoaulas?", a: "Cada receita é apresentada em vídeo, mostrando o preparo e a montagem. Você assiste quando quiser e pode rever quantas vezes precisar." },
-  { q: "Quais receitas estão incluídas?", a: "São 11 receitas de bolo gelado, entre versões embrulhadas e na marmita — como coco, Prestígio, Leite Ninho, brigadeiro, limão e olho de sogra. Veja a lista completa na seção de receitas." },
-  { q: "Como posso começar a vender bolos gelados?", a: "O curso traz orientações sobre organização da produção, precificação e ideias de divulgação. Os resultados dependem da sua dedicação, região e outros fatores." },
-  { q: "Como recebo o acesso ao curso?", a: "Após a confirmação do pagamento, as instruções de acesso são enviadas pela plataforma de checkout para o e-mail informado na compra." },
-  { q: "Por quanto tempo terei acesso?", a: "O período de acesso é informado na página de checkout. Consulte as condições antes de concluir a compra." },
-  { q: "Posso assistir às aulas pelo celular?", a: "Sim. As aulas podem ser assistidas pelo celular, tablet ou computador com acesso à internet." },
-  { q: "Como funciona a política de reembolso?", a: "As condições de reembolso seguem a política da plataforma de pagamento e são apresentadas no checkout." },
+  { q: "Preciso ter experiência com confeitaria?", a: "Não. O curso foi desenvolvido para iniciantes. Você vai aprender a preparar diferentes receitas de bolos gelados, acompanhando as videoaulas passo a passo, mesmo que nunca tenha feito antes." },
+  { q: "Quantas receitas vou aprender?", a: "São 27 aulas em vídeo com diferentes receitas de bolos gelados, incluindo sabores clássicos, especiais, versões na marmitinha e fatias de confeitaria." },
+  { q: "Como funcionam as videoaulas?", a: "As aulas são práticas e demonstrativas, mostrando o preparo das receitas passo a passo. Você pode assistir e rever quantas vezes quiser." },
+  { q: "Posso fazer os bolos em casa?", a: "Sim! Você pode preparar as receitas na sua própria cozinha, utilizando utensílios comuns e ingredientes que encontra facilmente em supermercados." },
+  { q: "Preciso investir muito para começar?", a: "Não necessariamente. Você pode começar com receitas mais simples e ingredientes acessíveis, organizando suas compras de acordo com o que pretende preparar." },
+  { q: "Como posso começar a vender bolos gelados?", a: "Você pode começar preparando as receitas, definindo seus preços e divulgando seus produtos para pessoas próximas e pelas redes sociais. O curso também apresenta diferentes opções para diversificar seu cardápio." },
+  { q: "Como recebo o acesso ao curso?", a: "Após a confirmação do pagamento, você recebe as instruções de acesso por e-mail e já pode começar a assistir às aulas." },
+  { q: "Por quanto tempo terei acesso?", a: "O acesso é vitalício! Você poderá assistir às 27 videoaulas quando quiser e rever o conteúdo sempre que precisar, conforme as condições da plataforma." },
+  { q: "Posso assistir pelo celular?", a: "Sim! Você pode acessar o curso pelo celular, tablet ou computador com acesso à internet." },
+  { q: "E se eu não gostar do curso?", a: "Você tem 7 dias de garantia incondicional! Se não gostar do conteúdo por qualquer motivo, basta solicitar o reembolso dentro desse prazo e receber 100% do valor pago de volta." },
 ];
 
 function BuyButton({ children, href = CHECKOUT_URL, className = "" }: { children: ReactNode; href?: string; className?: string }) {
