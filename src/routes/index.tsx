@@ -164,14 +164,13 @@ function Index() {
           <div className="mx-auto max-w-6xl px-5">
             <SectionHead title="Receitas deliciosas para você aprender!" sub="Descubra os sabores que fazem parte do curso Lucro com Bolo Gelado." />
             <ul className="grid grid-cols-1 gap-5 min-[420px]:grid-cols-2 lg:grid-cols-4">
-              {RECIPES.map((r, i) => (
+              {RECIPES.map((r) => (
                 <li key={r.name} className="group overflow-hidden rounded-2xl bg-card shadow-soft">
                   <div className="overflow-hidden">
                     <img src={r.img} alt={r.name} loading="lazy" width={816} height={816} className="aspect-square w-full object-cover transition duration-500 group-hover:scale-105" />
                   </div>
                   <div className="p-4">
-                    <span className="text-xs font-bold text-accent">RECEITA {String(i + 1).padStart(2, "0")}</span>
-                    <h3 className="mt-1 font-sans text-base font-bold leading-snug text-primary">{r.name}</h3>
+                    <h3 className="font-sans text-base font-bold leading-snug text-primary">{r.name}</h3>
                   </div>
                 </li>
               ))}
@@ -207,7 +206,6 @@ function Index() {
         {/* OFERTA */}
         <section id="oferta" className="scroll-mt-16 bg-offer-bg py-20">
           <div className="mx-auto max-w-6xl px-5">
-            <SectionHead title="Comece hoje sua jornada no mundo dos bolos gelados!" sub="Tenha acesso às receitas do curso Lucro com Bolo Gelado e aprenda no seu ritmo." />
             <div className="mx-auto max-w-md overflow-hidden rounded-3xl bg-card shadow-soft">
               <span className="offer-top-bar block h-2" aria-hidden />
               <div className="px-6 py-9 text-center sm:px-10">
