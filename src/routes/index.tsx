@@ -268,10 +268,10 @@ function Index() {
             <div className="flex flex-col items-center gap-6 rounded-3xl border border-border bg-muted/60 p-8 text-center sm:flex-row sm:text-left">
               <span className="inline-flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-primary text-accent"><ShieldCheck className="h-10 w-10" aria-hidden /></span>
               <div>
-                <h2 className="text-2xl font-bold text-primary">Compre com tranquilidade</h2>
+                <h2 className="text-2xl font-bold text-primary">Garantia incondicional de 7 dias</h2>
                 <p className="mt-2 text-muted-foreground">
                   {HAS_7_DAY_GUARANTEE
-                    ? "Você conta com garantia de 7 dias, conforme as condições informadas no checkout."
+                    ? "Se você achar que o curso não é para você, devolvemos 100% do seu dinheiro dentro do prazo. Sem perguntas."
                     : "As condições de acesso e de reembolso são apresentadas na página de checkout. Consulte-as antes de concluir sua compra."}
                 </p>
               </div>
