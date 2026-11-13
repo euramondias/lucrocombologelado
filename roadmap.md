@@ -7,3 +7,5 @@
 - [x] Conferir os depoimentos e o botão de compra na página.
 - [x] Refazer o Bloco 6 (oferta) no layout enviado, com preço "de" R$ 97,00 e fundo #FBF3E7.
 - [x] Conferir o Bloco 6 na página em celular e computador.
+- [x] Tirar o título e o subtítulo do Bloco 6 e os rótulos "RECEITA 01…11" dos cards de receita.
+- [x] Conferir as receitas e o Bloco 6 na página.
