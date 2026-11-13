@@ -7,17 +7,17 @@ import type { ReactNode } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CHECKOUT_URL, PRICE, ORIGINAL_PRICE, CONTACT, LEGAL_LINKS, HAS_7_DAY_GUARANTEE, TESTIMONIALS } from "@/config/site";
 import heroAsset from "@/assets/hero.jpeg.asset.json";
-import r1 from "@/assets/r1.jpg";
-import r2 from "@/assets/r2.jpg";
-import r3 from "@/assets/r3.jpg";
-import r4 from "@/assets/r4.jpg";
-import r5 from "@/assets/r5.jpg";
-import r6 from "@/assets/r6.jpg";
-import r7 from "@/assets/r7.jpg";
-import r8 from "@/assets/r8.jpg";
-import r9 from "@/assets/r9.jpg";
-import r10 from "@/assets/r10.jpg";
-import r11 from "@/assets/r11.jpg";
+import recipeCocoAbacaxi from "@/assets/recipe-coco-abacaxi.jpg.asset.json";
+import recipeNinhoBrigadeiro from "@/assets/recipe-ninho-brigadeiro.jpg.asset.json";
+import recipePrestigio from "@/assets/recipe-prestigio.jpg.asset.json";
+import recipeOlhoDeSogra from "@/assets/recipe-olho-de-sogra.jpg.asset.json";
+import recipeNinhoMarmita from "@/assets/recipe-ninho-marmita.jpg.asset.json";
+import recipeCocoMarmita from "@/assets/recipe-coco-marmita.jpg.asset.json";
+import recipeBrigadeiroMarmita from "@/assets/recipe-brigadeiro-marmita.jpg.asset.json";
+import recipeLimaoMarmita from "@/assets/recipe-limao-marmita.jpg.asset.json";
+import recipeLeiteNinho from "@/assets/recipe-leite-ninho.jpg.asset.json";
+import recipePrestigioMolhadinho from "@/assets/recipe-prestigio-molhadinho.jpg.asset.json";
+import recipeCocoMolhadinho from "@/assets/recipe-coco-molhadinho.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -38,17 +38,17 @@ export const Route = createFileRoute("/")({
 });
 
 const RECIPES = [
-  { name: "Bolo Gelado Embrulhado de Coco com Abacaxi", img: r1 },
-  { name: "Bolo Gelado Embrulhado de Ninho com Brigadeiro", img: r2 },
-  { name: "Bolo Gelado de Prestígio", img: r3 },
-  { name: "Bolo Gelado Embrulhado de Olho de Sogra", img: r4 },
-  { name: "Bolo Gelado de Leite Ninho na Marmita", img: r5 },
-  { name: "Bolo Gelado de Coco na Marmita", img: r6 },
-  { name: "Bolo Gelado de Brigadeiro com Calda Cremosa na Marmita", img: r7 },
-  { name: "Bolo Gelado de Limão na Marmita", img: r8 },
-  { name: "Bolo Gelado de Leite Ninho", img: r9 },
-  { name: "Bolo Gelado Prestígio Bem Molhadinho e Suculento", img: r10 },
-  { name: "Bolo Gelado Embrulhado de Coco Super Molhadinho e Suculento", img: r11 },
+  { name: "Bolo Gelado Embrulhado de Coco com Abacaxi", img: recipeCocoAbacaxi, w: 345, h: 517 },
+  { name: "Bolo Gelado Embrulhado de Ninho com Brigadeiro", img: recipeNinhoBrigadeiro, w: 640, h: 800 },
+  { name: "Bolo Gelado de Prestígio", img: recipePrestigio, w: 600, h: 800 },
+  { name: "Bolo Gelado Embrulhado de Olho de Sogra", img: recipeOlhoDeSogra, w: 459, h: 668 },
+  { name: "Bolo Gelado de Leite Ninho na Marmita", img: recipeNinhoMarmita, w: 800, h: 533 },
+  { name: "Bolo Gelado de Coco na Marmita", img: recipeCocoMarmita, w: 387, h: 516 },
+  { name: "Bolo Gelado de Brigadeiro com Calda Cremosa na Marmita", img: recipeBrigadeiroMarmita, w: 417, h: 479 },
+  { name: "Bolo Gelado de Limão na Marmita", img: recipeLimaoMarmita, w: 554, h: 554 },
+  { name: "Bolo Gelado de Leite Ninho", img: recipeLeiteNinho, w: 800, h: 796 },
+  { name: "Bolo Gelado Prestígio Bem Molhadinho e Suculento", img: recipePrestigioMolhadinho, w: 800, h: 534 },
+  { name: "Bolo Gelado Embrulhado de Coco Super Molhadinho e Suculento", img: recipeCocoMolhadinho, w: 554, h: 554 },
 ];
 
 const LEARN = [
@@ -168,7 +168,7 @@ function Index() {
               {RECIPES.map((r) => (
                 <li key={r.name} className="group overflow-hidden rounded-2xl bg-card shadow-soft">
                   <div className="overflow-hidden">
-                    <img src={r.img} alt={r.name} loading="lazy" width={816} height={816} className="aspect-square w-full object-cover transition duration-500 group-hover:scale-105" />
+                    <img src={r.img.url} alt={r.name} loading="lazy" width={r.w} height={r.h} className="aspect-square w-full object-cover transition duration-500 group-hover:scale-105" />
                   </div>
                   <div className="p-4">
                     <h3 className="font-sans text-base font-bold leading-snug text-primary">{r.name}</h3>
