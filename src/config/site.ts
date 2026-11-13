@@ -19,7 +19,7 @@ export const LEGAL_LINKS = {
 };
 
 /** Mude para true apenas se a garantia de 7 dias estiver realmente disponível. */
-export const HAS_7_DAY_GUARANTEE = false;
+export const HAS_7_DAY_GUARANTEE = true;
 
 /** Depoimentos fornecidos pelo responsável pela página. */
 export const TESTIMONIALS = [

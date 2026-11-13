@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import {
   Cake, PlayCircle, Package, ClipboardList, Calculator, Megaphone,
-  Sparkles, Video, TrendingUp, Wallet, Check, ShieldCheck, Star, User, Mail, MessageCircle,
+  Sparkles, Video, TrendingUp, Wallet, Check, ShieldCheck, Star, User, Mail, MessageCircle, ArrowRight,
 } from "lucide-react";
 import type { ReactNode } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { CHECKOUT_URL, PRICE, CONTACT, LEGAL_LINKS, HAS_7_DAY_GUARANTEE, TESTIMONIALS } from "@/config/site";
+import { CHECKOUT_URL, PRICE, ORIGINAL_PRICE, CONTACT, LEGAL_LINKS, HAS_7_DAY_GUARANTEE, TESTIMONIALS } from "@/config/site";
 import heroAsset from "@/assets/hero.jpeg.asset.json";
 import r1 from "@/assets/r1.jpg";
 import r2 from "@/assets/r2.jpg";
