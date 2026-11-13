@@ -168,7 +168,7 @@ function Index() {
               {RECIPES.map((r) => (
                 <li key={r.name} className="group overflow-hidden rounded-2xl bg-card shadow-soft">
                   <div className="overflow-hidden">
-                    <img src={r.img} alt={r.name} loading="lazy" width={816} height={816} className="aspect-square w-full object-cover transition duration-500 group-hover:scale-105" />
+                    <img src={r.img.url} alt={r.name} loading="lazy" width={r.w} height={r.h} className="aspect-square w-full object-cover transition duration-500 group-hover:scale-105" />
                   </div>
                   <div className="p-4">
                     <h3 className="font-sans text-base font-bold leading-snug text-primary">{r.name}</h3>
