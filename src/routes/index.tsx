@@ -38,17 +38,17 @@ export const Route = createFileRoute("/")({
 });
 
 const RECIPES = [
-  { name: "Bolo Gelado Embrulhado de Coco com Abacaxi", img: r1 },
-  { name: "Bolo Gelado Embrulhado de Ninho com Brigadeiro", img: r2 },
-  { name: "Bolo Gelado de Prestígio", img: r3 },
-  { name: "Bolo Gelado Embrulhado de Olho de Sogra", img: r4 },
-  { name: "Bolo Gelado de Leite Ninho na Marmita", img: r5 },
-  { name: "Bolo Gelado de Coco na Marmita", img: r6 },
-  { name: "Bolo Gelado de Brigadeiro com Calda Cremosa na Marmita", img: r7 },
-  { name: "Bolo Gelado de Limão na Marmita", img: r8 },
-  { name: "Bolo Gelado de Leite Ninho", img: r9 },
-  { name: "Bolo Gelado Prestígio Bem Molhadinho e Suculento", img: r10 },
-  { name: "Bolo Gelado Embrulhado de Coco Super Molhadinho e Suculento", img: r11 },
+  { name: "Bolo Gelado Embrulhado de Coco com Abacaxi", img: recipeCocoAbacaxi, w: 345, h: 517 },
+  { name: "Bolo Gelado Embrulhado de Ninho com Brigadeiro", img: recipeNinhoBrigadeiro, w: 640, h: 800 },
+  { name: "Bolo Gelado de Prestígio", img: recipePrestigio, w: 600, h: 800 },
+  { name: "Bolo Gelado Embrulhado de Olho de Sogra", img: recipeOlhoDeSogra, w: 459, h: 668 },
+  { name: "Bolo Gelado de Leite Ninho na Marmita", img: recipeNinhoMarmita, w: 800, h: 533 },
+  { name: "Bolo Gelado de Coco na Marmita", img: recipeCocoMarmita, w: 387, h: 516 },
+  { name: "Bolo Gelado de Brigadeiro com Calda Cremosa na Marmita", img: recipeBrigadeiroMarmita, w: 417, h: 479 },
+  { name: "Bolo Gelado de Limão na Marmita", img: recipeLimaoMarmita, w: 554, h: 554 },
+  { name: "Bolo Gelado de Leite Ninho", img: recipeLeiteNinho, w: 800, h: 796 },
+  { name: "Bolo Gelado Prestígio Bem Molhadinho e Suculento", img: recipePrestigioMolhadinho, w: 800, h: 534 },
+  { name: "Bolo Gelado Embrulhado de Coco Super Molhadinho e Suculento", img: recipeCocoMolhadinho, w: 554, h: 554 },
 ];
 
 const LEARN = [
