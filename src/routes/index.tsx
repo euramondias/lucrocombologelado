@@ -7,17 +7,17 @@ import type { ReactNode } from "react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { CHECKOUT_URL, PRICE, ORIGINAL_PRICE, CONTACT, LEGAL_LINKS, HAS_7_DAY_GUARANTEE, TESTIMONIALS } from "@/config/site";
 import heroAsset from "@/assets/hero.jpeg.asset.json";
-import r1 from "@/assets/r1.jpg";
-import r2 from "@/assets/r2.jpg";
-import r3 from "@/assets/r3.jpg";
-import r4 from "@/assets/r4.jpg";
-import r5 from "@/assets/r5.jpg";
-import r6 from "@/assets/r6.jpg";
-import r7 from "@/assets/r7.jpg";
-import r8 from "@/assets/r8.jpg";
-import r9 from "@/assets/r9.jpg";
-import r10 from "@/assets/r10.jpg";
-import r11 from "@/assets/r11.jpg";
+import recipeCocoAbacaxi from "@/assets/recipe-coco-abacaxi.jpg.asset.json";
+import recipeNinhoBrigadeiro from "@/assets/recipe-ninho-brigadeiro.jpg.asset.json";
+import recipePrestigio from "@/assets/recipe-prestigio.jpg.asset.json";
+import recipeOlhoDeSogra from "@/assets/recipe-olho-de-sogra.jpg.asset.json";
+import recipeNinhoMarmita from "@/assets/recipe-ninho-marmita.jpg.asset.json";
+import recipeCocoMarmita from "@/assets/recipe-coco-marmita.jpg.asset.json";
+import recipeBrigadeiroMarmita from "@/assets/recipe-brigadeiro-marmita.jpg.asset.json";
+import recipeLimaoMarmita from "@/assets/recipe-limao-marmita.jpg.asset.json";
+import recipeLeiteNinho from "@/assets/recipe-leite-ninho.jpg.asset.json";
+import recipePrestigioMolhadinho from "@/assets/recipe-prestigio-molhadinho.jpg.asset.json";
+import recipeCocoMolhadinho from "@/assets/recipe-coco-molhadinho.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
