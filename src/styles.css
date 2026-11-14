@@ -116,6 +116,13 @@
     border-color: var(--color-border);
   }
 
+  /* Esconde o selo/ widget de branding do Lovable (texto e botão X flutuante). */
+  #lovable-badge {
+    display: none !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
