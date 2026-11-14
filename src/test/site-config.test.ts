@@ -4,7 +4,7 @@ import { CHECKOUT_URL, HAS_7_DAY_GUARANTEE, ORIGINAL_PRICE, PRICE } from "@/conf
 
 describe("Sales page configuration", () => {
   it("uses the checkout selected for the buy button", () => {
-    expect(CHECKOUT_URL).toBe("https://pay.kiwify.com.br/jKqrmAz");
+    expect(CHECKOUT_URL).toBe("https://pay.kiwify.com.br/AkqU2HZ");
   });
 
   it("shows the offer price as R$ 27,00", () => {
