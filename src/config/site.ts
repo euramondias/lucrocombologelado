@@ -1,7 +1,7 @@
 // Edite aqui as informações configuráveis da página de vendas.
 
 /** Endereço do checkout. */
-export const CHECKOUT_URL = "https://pay.kiwify.com.br/jKqrmAz";
+export const CHECKOUT_URL = "https://pay.kiwify.com.br/AkqU2HZ";
 
 export const PRICE = "27,00";
 
